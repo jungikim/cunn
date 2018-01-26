@@ -1110,6 +1110,14 @@ TH_API void THNN_(Square_updateGradInput)(
                   THCTensor *gradOutput,
                   THCTensor *gradInput);
 
+TH_API void THNN_(SVDLinear_updateFullView)(
+                  THCState *state,
+                  THCIndexTensor *indices,
+                  THCTensor *z,
+                  THCTensor *B,
+                  THCTensor *h,
+                  THCTensor *bias);
+
 TH_API void THNN_(Sqrt_updateOutput)(
                   THCState *state,
                   THCTensor *input,
